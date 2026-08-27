@@ -538,6 +538,8 @@ a {
 
 .pie-pagina p {
     line-height: 1.7;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .pie-pagina ul {
@@ -552,8 +554,6 @@ a {
 
 .pie-pagina a {
     color: rgba(255, 255, 255, 0.78);
-    overflow-wrap: anywhere;
-    word-break: break-word;
     transition:
         color 0.25s ease,
         padding-left 0.25s ease;
@@ -722,6 +722,18 @@ a {
 }
 
 @media (max-width: 576px) {
+    .pie-pagina .col-6.col-md-3 {
+        width: 38%;
+    }
+
+    .pie-pagina .col-6.col-md-4 {
+        width: 62%;
+    }
+
+    .pie-pagina .col-6.col-md-4 p {
+        font-size: 14px;
+    }
+
     .logo-agencia {
         width: 155px;
         height: 46px;
@@ -756,17 +768,6 @@ a {
 
     .tarjeta-beneficio {
         padding: 26px;
-    }
-
-    .pie-pagina .row > * {
-        min-width: 0;
-    }
-
-    .pie-pagina a[href^="mailto:"] {
-        display: inline-block;
-        max-width: 100%;
-        overflow-wrap: anywhere;
-        word-break: break-word;
     }
 }
 
