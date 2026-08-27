@@ -537,6 +537,8 @@ a {
 
 .pie-pagina p {
     line-height: 1.7;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .pie-pagina ul {
@@ -754,6 +756,36 @@ a {
 
     .tarjeta-beneficio {
         padding: 26px;
+    }
+
+    /* Footer: distribución optimizada para celulares */
+    .pie-pagina .col-6.col-md-3 {
+        width: 38%;
+    }
+
+    .pie-pagina .col-6.col-md-4 {
+        width: 62%;
+    }
+
+    .pie-pagina .col-6.col-md-4 p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 420px) {
+    /* En pantallas muy angostas prioriza legibilidad */
+    .contenido-carousel h1,
+    .contenido-carousel h2 {
+        font-size: clamp(30px, 9vw, 35px);
+    }
+
+    .pie-pagina .col-6.col-md-3,
+    .pie-pagina .col-6.col-md-4 {
+        width: 100%;
+    }
+
+    .redes-sociales {
+        gap: 10px;
     }
 }
 
