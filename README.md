@@ -72,6 +72,6 @@ El proyecto utiliza Git para el control de versiones y GitHub para alojar el rep
 
 ## Sitio web
 
-El proyecto se encuentra preparado para ser publicado mediante GitHub Pages.
+El proyecto se encuentra publicado mediante GitHub Pages.
 
-El enlace al sitio desplegado se agregará en esta sección.
+[Ver Rumbo Oriental] (https://joacooriveroo.github.io/Rumbo-Oriental/)
