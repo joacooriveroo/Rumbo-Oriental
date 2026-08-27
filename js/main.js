@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const year = document.getElementById("year");
 
 if (year) {
@@ -49,13 +48,13 @@ if (formularioContacto && mensajeFormulario) {
             block: "center"
         });
     });
-=======
+}
+
 const year = document.getElementById("year");
 
 if (year) {
     year.textContent = new Date().getFullYear();
 }
-
 
 /* Modal de la galería */
 
@@ -100,5 +99,4 @@ if (formularioContacto && mensajeFormulario) {
             block: "center"
         });
     });
->>>>>>> 0506df9cda542e93aa1d75c97e8b510fa3d07124
 }
