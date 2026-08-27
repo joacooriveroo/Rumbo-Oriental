@@ -552,6 +552,8 @@ a {
 
 .pie-pagina a {
     color: rgba(255, 255, 255, 0.78);
+    overflow-wrap: anywhere;
+    word-break: break-word;
     transition:
         color 0.25s ease,
         padding-left 0.25s ease;
@@ -754,6 +756,17 @@ a {
 
     .tarjeta-beneficio {
         padding: 26px;
+    }
+
+    .pie-pagina .row > * {
+        min-width: 0;
+    }
+
+    .pie-pagina a[href^="mailto:"] {
+        display: inline-block;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        word-break: break-word;
     }
 }
 
