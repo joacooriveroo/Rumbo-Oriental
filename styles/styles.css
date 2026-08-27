@@ -785,7 +785,7 @@ a {
             rgba(5, 27, 38, 0.92),
             rgba(18, 103, 130, 0.68)
         ),
-        url("../assets/montevideo.jpg") center 45% / cover;
+        url("../assets/montevideo.webp") center 45% / cover;
 }
 
 .contenido-portada-interna {
@@ -1009,7 +1009,7 @@ a {
             rgba(5, 27, 38, 0.94),
             rgba(18, 103, 130, 0.65)
         ),
-        url("../assets/punta-del-este.jpg") center 48% / cover;
+        url("../assets/punta-del-este.webp") center 48% / cover;
 }
 
 
@@ -1278,7 +1278,7 @@ a {
             rgba(5, 27, 38, 0.94),
             rgba(18, 103, 130, 0.58)
         ),
-        url("../assets/cabo-polonio.jpg") center 55% / cover;
+        url("../assets/cabo-polonio.webp") center 55% / cover;
 }
 
 
@@ -1514,7 +1514,7 @@ a {
             rgba(5, 27, 38, 0.94),
             rgba(18, 103, 130, 0.58)
         ),
-        url("../assets/villa-serrana.jpg") center 48% / cover;
+        url("../assets/villa-serrana.webp") center 48% / cover;
 }
 
 
