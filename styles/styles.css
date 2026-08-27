@@ -1825,6 +1825,30 @@ textarea.form-control {
     }
 }
 
+
+/* Animaciones de entrada al hacer scroll */
+
+.animar-entrada {
+    opacity: 0;
+}
+
+.animar-entrada.visible {
+    animation: aparecer-desde-abajo 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: var(--retardo-animacion, 0ms);
+}
+
+@keyframes aparecer-desde-abajo {
+    from {
+        opacity: 0;
+        translate: 0 24px;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;

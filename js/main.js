@@ -53,3 +53,52 @@ if (formularioContacto && mensajeFormulario) {
         });
     });
 }
+
+/* Animaciones sutiles al entrar en pantalla */
+
+const reducirMovimiento = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+).matches;
+
+if (!reducirMovimiento && "IntersectionObserver" in window) {
+    const elementosAnimados = document.querySelectorAll(
+        [
+            ".encabezado-seccion",
+            ".tarjeta-beneficio",
+            ".tarjeta-destino",
+            ".resumen-paquete",
+            ".tarjeta-paquete",
+            ".elemento-galeria",
+            ".tarjeta-experiencia",
+            ".tarjeta-contacto",
+            ".panel-contacto",
+            ".ubicacion-ilustrativa",
+            ".contenido-eleccion",
+            ".contenido-invitacion"
+        ].join(", ")
+    );
+
+    const observadorAnimaciones = new IntersectionObserver(
+        function (entradas, observador) {
+            entradas.forEach(function (entrada) {
+                if (entrada.isIntersecting) {
+                    entrada.target.classList.add("visible");
+                    observador.unobserve(entrada.target);
+                }
+            });
+        },
+        {
+            threshold: 0.12,
+            rootMargin: "0px 0px -40px 0px"
+        }
+    );
+
+    elementosAnimados.forEach(function (elemento, indice) {
+        elemento.classList.add("animar-entrada");
+        elemento.style.setProperty(
+            "--retardo-animacion",
+            `${(indice % 4) * 70}ms`
+        );
+        observadorAnimaciones.observe(elemento);
+    });
+}
