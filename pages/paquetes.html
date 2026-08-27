@@ -18,8 +18,10 @@
 
 <body>
 
+    <a class="salto-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+
     <header class="encabezado">
-        <nav class="navbar navbar-expand-lg navbar-dark navegacion">
+        <nav class="navbar navbar-expand-lg navbar-dark navegacion" aria-label="Navegación principal">
             <div class="container">
 
                 <a
@@ -43,7 +45,7 @@
                     aria-expanded="false"
                     aria-label="Abrir menú"
                 >
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="menuPrincipal">
@@ -90,7 +92,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="contenido-principal">
 
         <!-- Portada -->
 
@@ -132,7 +134,7 @@
 
                     <div class="col-12 col-md-4">
                         <article class="resumen-paquete">
-                            <span>⏱️</span>
+                            <span aria-hidden="true">⏱️</span>
                             <h3>Distintas duraciones</h3>
                             <p>
                                 Propuestas de uno, dos o tres días para elegir
@@ -143,7 +145,7 @@
 
                     <div class="col-12 col-md-4">
                         <article class="resumen-paquete">
-                            <span>🗺️</span>
+                            <span aria-hidden="true">🗺️</span>
                             <h3>Destinos variados</h3>
                             <p>
                                 Opciones de playa, ciudad, historia, naturaleza
@@ -154,7 +156,7 @@
 
                     <div class="col-12 col-md-4">
                         <article class="resumen-paquete">
-                            <span>👥</span>
+                            <span aria-hidden="true">👥</span>
                             <h3>Viajes personalizados</h3>
                             <p>
                                 Alternativas para parejas, familias y grupos
@@ -674,15 +676,15 @@
                     <p>Lunes a viernes de 9:00 a 18:00</p>
 
                     <nav class="redes-sociales" aria-label="Redes sociales">
-                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Instagram">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Instagram (se abre en una pestaña nueva)">
                             <img src="../assets/logos/instagram.png" alt="">
                         </a>
 
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Facebook">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Facebook (se abre en una pestaña nueva)">
                             <img src="../assets/logos/facebook.png" alt="">
                         </a>
 
-                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar X">
+                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar X (se abre en una pestaña nueva)">
                             <img src="../assets/logos/x.png" alt="">
                         </a>
                     </nav>

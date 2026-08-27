@@ -54,6 +54,33 @@ a {
 }
 
 
+/* Accesibilidad */
+
+.salto-contenido {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 2000;
+    padding: 10px 14px;
+    border-radius: 7px;
+    color: var(--blanco);
+    background-color: var(--azul-oscuro);
+    font-weight: 700;
+    transform: translateY(-150%);
+}
+
+.salto-contenido:focus {
+    transform: translateY(0);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--naranja);
+    outline-offset: 3px;
+}
+
+
+
 /* Navbar */
 
 .encabezado {
@@ -1795,5 +1822,19 @@ textarea.form-control {
 
     .boton-enviar {
         width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }

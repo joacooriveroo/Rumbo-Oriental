@@ -18,8 +18,10 @@
 
 <body>
 
+    <a class="salto-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+
     <header class="encabezado">
-        <nav class="navbar navbar-expand-lg navbar-dark navegacion">
+        <nav class="navbar navbar-expand-lg navbar-dark navegacion" aria-label="Navegación principal">
             <div class="container">
 
                 <a
@@ -43,7 +45,7 @@
                     aria-expanded="false"
                     aria-label="Abrir menú"
                 >
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="menuPrincipal">
@@ -90,7 +92,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="contenido-principal">
 
         <!-- Portada -->
 
@@ -133,7 +135,7 @@
 
                     <div class="col-12 col-md-4">
                         <article class="tarjeta-contacto">
-                            <span class="icono-contacto">📍</span>
+                            <span class="icono-contacto" aria-hidden="true">📍</span>
                             <h3>Ubicación</h3>
                             <p>Montevideo, Uruguay</p>
                             <small>Dirección ficticia para fines académicos.</small>
@@ -142,7 +144,7 @@
 
                     <div class="col-12 col-md-4">
                         <article class="tarjeta-contacto">
-                            <span class="icono-contacto">✉️</span>
+                            <span class="icono-contacto" aria-hidden="true">✉️</span>
                             <h3>Correo electrónico</h3>
                             <p>contacto@rumbooriental.uy</p>
                             <small>Respondemos dentro del horario de atención.</small>
@@ -151,7 +153,7 @@
 
                     <div class="col-12 col-md-4">
                         <article class="tarjeta-contacto">
-                            <span class="icono-contacto">🕒</span>
+                            <span class="icono-contacto" aria-hidden="true">🕒</span>
                             <h3>Horarios</h3>
                             <p>Lunes a viernes</p>
                             <small>De 9:00 a 18:00 horas.</small>
@@ -187,7 +189,10 @@
                             <div
                                 id="mensajeFormulario"
                                 class="alert alert-success d-none mensaje-formulario"
-                                role="alert"
+                                role="status"
+                                aria-live="polite"
+                                aria-atomic="true"
+                                tabindex="-1"
                             >
                                 La consulta fue registrada correctamente.
                                 Este formulario pertenece a un proyecto académico
@@ -211,6 +216,7 @@
                                             class="form-control"
                                             id="nombre"
                                             name="nombre"
+                                            autocomplete="name"
                                             placeholder="Escribí tu nombre"
                                             required
                                         >
@@ -229,6 +235,7 @@
                                             class="form-control"
                                             id="correo"
                                             name="correo"
+                                            autocomplete="email"
                                             placeholder="nombre@correo.com"
                                             required
                                         >
@@ -247,6 +254,8 @@
                                             class="form-control"
                                             id="telefono"
                                             name="telefono"
+                                            autocomplete="tel"
+                                            inputmode="tel"
                                             placeholder="099 000 000"
                                         >
                                     </div>
@@ -412,6 +421,7 @@
                                                 class="form-check-input"
                                                 type="checkbox"
                                                 id="aceptar"
+                                                name="aceptar"
                                                 required
                                             >
 
@@ -476,7 +486,7 @@
                         </aside>
 
                         <div class="ubicacion-ilustrativa">
-                            <span>🗺️</span>
+                            <span aria-hidden="true">🗺️</span>
                             <h2>Área de atención</h2>
                             <p>
                                 Presentamos propuestas turísticas para diferentes
@@ -644,15 +654,15 @@
                     <p>Lunes a viernes de 9:00 a 18:00</p>
 
                     <nav class="redes-sociales" aria-label="Redes sociales">
-                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Instagram">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Instagram (se abre en una pestaña nueva)">
                             <img src="../assets/logos/instagram.png" alt="">
                         </a>
 
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Facebook">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Facebook (se abre en una pestaña nueva)">
                             <img src="../assets/logos/facebook.png" alt="">
                         </a>
 
-                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar X">
+                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar X (se abre en una pestaña nueva)">
                             <img src="../assets/logos/x.png" alt="">
                         </a>
                     </nav>

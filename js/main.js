@@ -47,5 +47,9 @@ if (formularioContacto && mensajeFormulario) {
             behavior: "smooth",
             block: "center"
         });
+
+        mensajeFormulario.focus({
+            preventScroll: true
+        });
     });
 }
